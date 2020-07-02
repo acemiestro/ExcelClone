@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
     <link rel = "stylesheet" href = "style.css">
-    <title><%=title></title>
 </head>
 <body>
     <div class = "menu"> Menu </div>
@@ -14,14 +14,17 @@
         <input type = "text"> 
         <input type = "text">
     </div>
-    <div class = "cell-container"> Cell Container </div>
-        <h1>
-            <%for(let i = 1; i <= rows; i++) {%>
-                <div class = "rows">
-                    <%=i%>  
-                </div>
-            <%}%>
-        </h1>
+    <div class = "cell-container"> Cell Container 
+        <%for(let i = 1; i <= rows; i++) {%>
+            <div class = "rows">
+                <%for(let j = 0; j < cols; j++) {%>
+                    <div class="div cols">
+                        <%=i + "-" + String.fromCharCode(65 + j)%>
+                    </div>
+                <%}%>
+            </div>
+        <%}%>
+    </div>
     <div class = "sheets"> Sheets </div>
 </body>
 </html>
