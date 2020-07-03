@@ -12,7 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "ejs-electron": "^2.0.3",
-    "electron": "^9.0.5"
+    "electron": "^9.0.5",
+    "jquery": "^3.5.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
 }
