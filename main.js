@@ -1,3 +1,9 @@
+// npm init -y
+// npm install electron --save-dev
+//create main.js
+// go to package.json =>
+// "main": main.js
+// scripts "start":"electron ."
 const electron = require("electron");
 const app = electron.app;
 const ejs = require("ejs-electron");
