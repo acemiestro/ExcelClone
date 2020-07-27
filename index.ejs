@@ -12,8 +12,6 @@
 <!-- <h1>First Electron App</h1> -->
 
 <body>
-
-    <!-- #menu.menu-container+#menu-options.menu-options+(#formula-container>(#address-input+#formula-input))+#cell-conatiner.cell-conatiner+#sheets.sheets -->
     <div id="menu-container" class="menu-container">
         <div id="File" class="menu">File</div>
         <div id="Home" class="menu">Home</div>
@@ -84,7 +82,8 @@
                 <div class="row">
                     <%for(let j=0;j<cols;j++){%>
                         <div class="cell" contenteditable="true" rid=<%=i%> cid=
-                            <%=j%>>cell</div>
+                            <%=j%>>cell
+                        </div>
                         <%}%>
                 </div>
                 <%}%>
